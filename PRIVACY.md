@@ -16,8 +16,9 @@ sends nothing to the Vendor. Your workflows, your source code and your secrets s
 - **Secrets.** Secret values are kept in the IDE password store on your machine. They are passed only
   to the run you start, and are never written to the shared settings, to a preset or to the run
   folder.
-- **Run files.** Each run uses a working folder under your system's temporary folder. It holds the
-  run's own settings and caches, never your secret values.
+- **Run files.** Each run keeps its working files in a hidden `.runcradle` folder at the top of your
+  repository, which tells Git to ignore it, and its engine settings in a folder under your system's
+  temporary folder. Neither holds your secret values. You can delete either folder at any time.
 - **Network.** Runcradle itself makes no network requests. A run does what your workflow says: an
   action named in a `uses:` step is downloaded from its GitHub repository, and any network call your
   own steps make is made from your machine. Runcradle never pulls container images; it uses images
