@@ -1,7 +1,7 @@
 # End User Licence Agreement
 
 **Runcradle**
-Version 1.0, 7 October 2026
+Version 1.1, 11 November 2026
 Vendor: **Muhammad Zuhaib Zahid** ("the Vendor", "we", "us")
 
 This agreement is between you and the Vendor, and it covers your use of the Runcradle plugin for
@@ -12,16 +12,19 @@ It is written to be read. Where a term has a plain meaning, that is the meaning 
 
 ## 1. Your licence
 
-The Software is paid. Running a workflow job needs a subscription or the free trial. We grant you a
-personal, non-exclusive, non-transferable licence to use the Software:
+Running a workflow job, picking matrix rows and Stop are **free**, with no licence and no time limit.
+**Runcradle Pro** (the preflight report, step links, team presets, run history, comparison with GitHub
+and the push check) needs a subscription or the free trial. We grant you a personal, non-exclusive,
+non-transferable licence to use the free part, and to use Runcradle Pro:
 
 - **During a valid subscription**, monthly or yearly. One licence covers one named user, on as many
   machines as that one person uses. A **personal** licence is for an individual paying for it
   themselves. A **commercial** licence is required where an employer, client or any organisation
   pays for the Software or where it is used in the course of work for one.
-- **During the free trial.** 30 days with every feature enabled, once per user.
-- Subscriptions and trials are managed by JetBrains. When a subscription lapses, Runcradle stops
-  starting runs. **Your workflows, run configurations and repository are untouched.**
+- **During the free trial.** 30 days with every Pro feature enabled, once per user.
+- Subscriptions and trials are managed by JetBrains. When a subscription lapses, the Pro features
+  stop and running jobs stays free. **Your workflows, run configurations and repository are
+  untouched.**
 
 ## 2. What you may not do
 

@@ -1,7 +1,7 @@
 # Privacy Policy
 
 **Runcradle**
-Version 1.0, 7 October 2026
+Version 1.1, 11 November 2026
 Vendor: **Muhammad Zuhaib Zahid**
 
 ## The short version
@@ -19,10 +19,17 @@ sends nothing to the Vendor. Your workflows, your source code and your secrets s
 - **Run files.** Each run keeps its working files in a hidden `.runcradle` folder at the top of your
   repository, which tells Git to ignore it, and its engine settings in a folder under your system's
   temporary folder. Neither holds your secret values. You can delete either folder at any time.
-- **Network.** Runcradle itself makes no network requests. A run does what your workflow says: an
-  action named in a `uses:` step is downloaded from its GitHub repository, and any network call your
-  own steps make is made from your machine. Runcradle never pulls container images; it uses images
-  already on your machine.
+- **Run history (Runcradle Pro).** Each Pro run is saved in the IDE's own system folder on your
+  machine, one folder per project and never inside your repository: its configuration, start time,
+  step results and log, at most 50 runs, each log cut at 5 MB. Every secret value of the run and the
+  GitHub token are masked before anything is written. Nothing of it leaves your machine.
+- **Network.** Runcradle itself makes no network requests, with one exception you start yourself:
+  **Compare with GitHub** (Runcradle Pro) asks api.github.com, and no other host, for the latest run of
+  the same workflow, job and branch. It sends the token you give it, kept in the IDE password store,
+  and receives that run's job and step results. A run does what your workflow says: an action named in
+  a `uses:` step is downloaded from its GitHub repository, and any network call your own steps make is
+  made from your machine. Runcradle never pulls container images; it uses images already on your
+  machine.
 - **No usage tracking.** The plugin does not record which features you use or anything about your
   projects.
 - **No accounts.** The plugin asks you for no personal information and has no sign-in of its own.
